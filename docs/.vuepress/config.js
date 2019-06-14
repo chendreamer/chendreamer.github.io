@@ -1,7 +1,8 @@
 module.exports = {
-	title: 'blog',
+	title: "chen's blog",
 	description: '个人博客',
 	themeConfig: {
+		search: false,
 		sidebarDepth: 2, // e'b将同时提取markdown中h2 和 h3 标题，显示在侧边栏上。
 		lastUpdated: 'Last Updated', // 文档更新时间：每个文件git最后提交的时间
 		nav: [{
@@ -9,24 +10,12 @@ module.exports = {
 				link: '/'
 			},
 			{
-				text: 'Guide',
-				link: '/guide/'
+				text: 'GitHub',
+				link: 'https://github.com/chendreamer'
 			},
 			{
-				text: 'External',
-				link: 'https://google.com'
-			},
-			{
-				text: 'Languages',
-				items: [{
-						text: 'Chinese',
-						link: '/language/chinese'
-					},
-					{
-						text: 'Japanese',
-						link: '/language/japanese'
-					}
-				]
+				text: 'baidu',
+				link: 'https://baidu.com'
 			}
 		],
 		sidebar: [{
