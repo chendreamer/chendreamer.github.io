@@ -19,7 +19,7 @@ module.exports = {
 		],
 		sidebar: [{
 				title: '前端',
-				children: ['/前端/markdown语法', '/前端/vue']
+				children: ['/前端/markdown语法','/前端/git使用手册','/前端/vue']
 			},
 			{
 				title: '后端',
