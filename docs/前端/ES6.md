@@ -1,7 +1,7 @@
 # ES6
 ## let, const  
-let则实际上为JavaScript新增了块级作用域。用它所声明的变量，只在let命令所在的代码块内有效。
-```
+let则实际上为js新增了块级作用域。用它所声明的变量，只在let命令所在的代码块内有效。
+```js
 let name = 'zach'
 
 while (true) {
@@ -15,11 +15,11 @@ console.log(name)  //zach
 const也用来声明变量，但是声明的是常量。一旦声明，常量的值就不能改变。  
 当我们尝试去改变用const声明的常量时，浏览器就会报错。  
 const有一个很好的应用场景，就是当我们引用第三方库的时声明的变量，用const来声明可以避免未来不小心重命名而导致出现bug。
-```
+```js
 const monent = require('moment')
 ```
 ## class, extends, super
-```
+```js
 class Animal {
     constructor(){
         this.type = 'animal'
@@ -53,7 +53,7 @@ ES6的继承机制，实质是先创造父类的实例对象this（所以必须�
 P.S 如果你写react的话，就会发现以上三个东西在最新版React中出现得很多。创建的每个component都是一个继承React.Component的类。
 
 ## arrow function
-```
+```js
 function(i){ return i + 1; } //ES5
 (i) => i + 1 //ES6
 ----------------------------------
@@ -67,10 +67,10 @@ function(x, y) {
 当我们使用箭头函数时，函数体内的this对象，就是定义时所在的对象，而不是使用时所在的对象。  
 并不是因为箭头函数内部有绑定this的机制，实际原因是箭头函数根本没有自己的this，它的this是继承外面的，因此内部的this就是外层代码块的this。
 ## destructuring
-更多参考点<a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment" target="_blank">这里</a>
-```
+更多参考点<a href="https://developer.mozilla.org/zh-CN/docs/Web/js/Reference/Operators/Destructuring_assignment" target="_blank">这里</a>
+```js
 es5:
-et cat = 'ken'
+let cat = 'ken'
 let dog = 'lili'
 let zoo = {cat: cat, dog: dog}
 console.log(zoo)  //Object {cat: "ken", dog: "lili"}
@@ -86,7 +86,7 @@ let { type, many} = dog
 console.log(type, many)   //animal 2
 ```
 ## default, rest
-```
+```js
 es5:
 function animal(type){
     type = type || 'cat'  
@@ -106,7 +106,7 @@ function animals(...types){
 animals('cat', 'dog', 'fish') //["cat", "dog", "fish"]
 ```
 ## import export
-```
+```js
 //index.js
 import animal from './content'
 

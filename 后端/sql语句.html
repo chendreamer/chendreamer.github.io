@@ -7,7 +7,7 @@
     <meta name="description" content="个人博客">
     
     
-    <link rel="preload" href="/assets/css/0.styles.8c37933a.css" as="style"><link rel="preload" href="/assets/js/app.56d36088.js" as="script"><link rel="preload" href="/assets/js/2.b0aa7967.js" as="script"><link rel="preload" href="/assets/js/6.8aa7f68e.js" as="script"><link rel="prefetch" href="/assets/js/10.e5a7eb88.js"><link rel="prefetch" href="/assets/js/11.ff76e042.js"><link rel="prefetch" href="/assets/js/12.1ec8026e.js"><link rel="prefetch" href="/assets/js/3.f557593c.js"><link rel="prefetch" href="/assets/js/4.91bf8aaf.js"><link rel="prefetch" href="/assets/js/5.0a3d416a.js"><link rel="prefetch" href="/assets/js/7.3e0110a0.js"><link rel="prefetch" href="/assets/js/8.06e9888d.js"><link rel="prefetch" href="/assets/js/9.8b6b49f6.js">
+    <link rel="preload" href="/assets/css/0.styles.8c37933a.css" as="style"><link rel="preload" href="/assets/js/app.053b916f.js" as="script"><link rel="preload" href="/assets/js/2.b0aa7967.js" as="script"><link rel="preload" href="/assets/js/6.c6611473.js" as="script"><link rel="prefetch" href="/assets/js/10.e5a7eb88.js"><link rel="prefetch" href="/assets/js/11.ff76e042.js"><link rel="prefetch" href="/assets/js/12.1ec8026e.js"><link rel="prefetch" href="/assets/js/3.f557593c.js"><link rel="prefetch" href="/assets/js/4.91bf8aaf.js"><link rel="prefetch" href="/assets/js/5.cb1320e3.js"><link rel="prefetch" href="/assets/js/7.3e0110a0.js"><link rel="prefetch" href="/assets/js/8.ce63d53a.js"><link rel="prefetch" href="/assets/js/9.8b6b49f6.js">
     <link rel="stylesheet" href="/assets/css/0.styles.8c37933a.css">
   </head>
   <body>
@@ -23,100 +23,100 @@
 查询：<code>SELECT name,country FROM Websites;</code><br>
 去掉 &quot;country&quot; 列重复值：<code>SELECT DISTINCT country FROM Websites;</code><br>
 选取国家为 &quot;CN&quot; 的所有网站：<code>SELECT * FROM Websites WHERE country='CN';</code><br>
-逻辑运算的优先级：( ) &gt; not &gt; and  &gt;  or</p> <div class="language- extra-class"><pre class="language-text"><code>select * from emp where not sal &gt; 1500;
-Select * from emp where comm is null;
-Select * from emp where sal between 1500 and 3000;
-</code></pre></div><p>查询 EMP 表 SAL 列中等于 5000，3000，1500 的值:</p> <div class="language- extra-class"><pre class="language-text"><code>Select * from emp where sal in (5000,3000,1500);
-Select * from emp where ename like 'M%';
+逻辑运算的优先级：( ) &gt; not &gt; and  &gt;  or</p> <div class="language-sql extra-class"><pre class="language-sql"><code><span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span> emp <span class="token keyword">where</span> <span class="token operator">not</span> sal <span class="token operator">&gt;</span> <span class="token number">1500</span><span class="token punctuation">;</span>
+<span class="token keyword">Select</span> <span class="token operator">*</span> <span class="token keyword">from</span> emp <span class="token keyword">where</span> comm <span class="token operator">is</span> <span class="token boolean">null</span><span class="token punctuation">;</span>
+<span class="token keyword">Select</span> <span class="token operator">*</span> <span class="token keyword">from</span> emp <span class="token keyword">where</span> sal <span class="token operator">between</span> <span class="token number">1500</span> <span class="token operator">and</span> <span class="token number">3000</span><span class="token punctuation">;</span>
+</code></pre></div><p>查询 EMP 表 SAL 列中等于 5000，3000，1500 的值:</p> <div class="language-sql extra-class"><pre class="language-sql"><code><span class="token keyword">Select</span> <span class="token operator">*</span> <span class="token keyword">from</span> emp <span class="token keyword">where</span> sal <span class="token operator">in</span> <span class="token punctuation">(</span><span class="token number">5000</span><span class="token punctuation">,</span><span class="token number">3000</span><span class="token punctuation">,</span><span class="token number">1500</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">Select</span> <span class="token operator">*</span> <span class="token keyword">from</span> emp <span class="token keyword">where</span> ename <span class="token operator">like</span> <span class="token string">'M%'</span><span class="token punctuation">;</span>
 </code></pre></div><p>% 表示多个字值，_ 下划线表示一个字符；<br>
  M% : 为能配符，正则表达式，表示的意思为模糊查询信息为 M 开头的。<br>
  %M% : 双百分号表示查询的信息在内容中间。<br>
  %M_% : 表示查询的字母在内容的倒数第二位<br> <code>SELECT * FROM Websites ORDER BY country,alexa;</code>
-默认 ASC（升序）。DESC（降序）。</p> <div class="language- extra-class"><pre class="language-text"><code>INSERT INTO Websites (name, url, alexa, country) 
-VALUES ('百度','https://www.baidu.com/','4','CN');
-UPDATE Websites SET alexa='5000', country='USA' WHERE name='菜鸟教程';
+默认 ASC（升序）。DESC（降序）。</p> <div class="language-sql extra-class"><pre class="language-sql"><code><span class="token keyword">INSERT</span> <span class="token keyword">INTO</span> Websites <span class="token punctuation">(</span>name<span class="token punctuation">,</span> url<span class="token punctuation">,</span> alexa<span class="token punctuation">,</span> country<span class="token punctuation">)</span> 
+<span class="token keyword">VALUES</span> <span class="token punctuation">(</span><span class="token string">'百度'</span><span class="token punctuation">,</span><span class="token string">'https://www.baidu.com/'</span><span class="token punctuation">,</span><span class="token string">'4'</span><span class="token punctuation">,</span><span class="token string">'CN'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">UPDATE</span> Websites <span class="token keyword">SET</span> alexa<span class="token operator">=</span><span class="token string">'5000'</span><span class="token punctuation">,</span> country<span class="token operator">=</span><span class="token string">'USA'</span> <span class="token keyword">WHERE</span> name<span class="token operator">=</span><span class="token string">'菜鸟教程'</span><span class="token punctuation">;</span>
 </code></pre></div><p>执行没有 WHERE 子句的 UPDATE 要慎重（容易吧所有数据都替换了）。<br> <code>DELETE FROM Websites WHERE name='百度' AND country='CN';</code><br>
 您可以在不删除表的情况下，删除表中所有的行。这意味着表结构、属性、索引将保持不变：<br> <code>DELETE FROM table_name;或DELETE * FROM table_name;</code><br>
-查询选取头5条记录：</p> <div class="language- extra-class"><pre class="language-text"><code>MySQL： SELECT * FROM Persons LIMIT 5;
-Oracle：SELECT * FROM Persons WHERE ROWNUM &lt;=5;
-SELECT * FROM Websites WHERE name IN ('Google','菜鸟教程');
-SELECT * FROM access_log
-WHERE date BETWEEN '2016-05-10' AND '2016-05-14';
-</code></pre></div><p>把三个列（url、alexa 和 country）结合在一起，并创建一个名为 &quot;site_info&quot; 的别名：</p> <div class="language- extra-class"><pre class="language-text"><code>SELECT name, CONCAT(url, ', ', alexa, ', ', country) AS site_info FROM Websites;
-SELECT w.name, w.url, a.count, a.date  FROM Websites AS w, access_log AS a WHERE a.site_id=w.id and w.name=&quot;菜鸟教程&quot;;
+查询选取头5条记录：</p> <div class="language-sql extra-class"><pre class="language-sql"><code>MySQL： <span class="token keyword">SELECT</span> <span class="token operator">*</span> <span class="token keyword">FROM</span> Persons <span class="token keyword">LIMIT</span> <span class="token number">5</span><span class="token punctuation">;</span>
+Oracle：<span class="token keyword">SELECT</span> <span class="token operator">*</span> <span class="token keyword">FROM</span> Persons <span class="token keyword">WHERE</span> ROWNUM <span class="token operator">&lt;=</span><span class="token number">5</span><span class="token punctuation">;</span>
+<span class="token keyword">SELECT</span> <span class="token operator">*</span> <span class="token keyword">FROM</span> Websites <span class="token keyword">WHERE</span> name <span class="token operator">IN</span> <span class="token punctuation">(</span><span class="token string">'Google'</span><span class="token punctuation">,</span><span class="token string">'菜鸟教程'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">SELECT</span> <span class="token operator">*</span> <span class="token keyword">FROM</span> access_log
+<span class="token keyword">WHERE</span> <span class="token keyword">date</span> <span class="token operator">BETWEEN</span> <span class="token string">'2016-05-10'</span> <span class="token operator">AND</span> <span class="token string">'2016-05-14'</span><span class="token punctuation">;</span>
+</code></pre></div><p>把三个列（url、alexa 和 country）结合在一起，并创建一个名为 &quot;site_info&quot; 的别名：</p> <div class="language-sql extra-class"><pre class="language-sql"><code><span class="token keyword">SELECT</span> name<span class="token punctuation">,</span> CONCAT<span class="token punctuation">(</span>url<span class="token punctuation">,</span> <span class="token string">', '</span><span class="token punctuation">,</span> alexa<span class="token punctuation">,</span> <span class="token string">', '</span><span class="token punctuation">,</span> country<span class="token punctuation">)</span> <span class="token keyword">AS</span> site_info <span class="token keyword">FROM</span> Websites<span class="token punctuation">;</span>
+<span class="token keyword">SELECT</span> w<span class="token punctuation">.</span>name<span class="token punctuation">,</span> w<span class="token punctuation">.</span>url<span class="token punctuation">,</span> a<span class="token punctuation">.</span>count<span class="token punctuation">,</span> a<span class="token punctuation">.</span><span class="token keyword">date</span>  <span class="token keyword">FROM</span> Websites <span class="token keyword">AS</span> w<span class="token punctuation">,</span> access_log <span class="token keyword">AS</span> a <span class="token keyword">WHERE</span> a<span class="token punctuation">.</span>site_id<span class="token operator">=</span>w<span class="token punctuation">.</span>id <span class="token operator">and</span> w<span class="token punctuation">.</span>name<span class="token operator">=</span><span class="token string">&quot;菜鸟教程&quot;</span><span class="token punctuation">;</span>
 </code></pre></div><p>INNER JOIN：如果表中有至少一个匹配，则返回行<br>
 LEFT JOIN：即使右表中没有匹配，也从左表返回所有的行<br>
 RIGHT JOIN：即使左表中没有匹配，也从右表返回所有的行<br>
-FULL JOIN：只要其中一个表中存在匹配，则返回行</p> <div class="language- extra-class"><pre class="language-text"><code>SELECT Websites.id, Websites.name, access_log.count, access_log.date
-FROM Websites  INNER JOIN access_log
-ON Websites.id=access_log.site_id;
-</code></pre></div><p>LEFT JOIN 关键字从左表（table1）返回所有的行，即使右表（table2）中没有匹配。如果右表中没有匹配，则结果为 NULL。</p> <div class="language- extra-class"><pre class="language-text"><code>SELECT Websites.name, access_log.count, access_log.date
-FROM Websites LEFT JOIN access_log ON Websites.id=access_log.site_id
-ORDER BY access_log.count DESC;
-</code></pre></div><p>RIGHT JOIN 关键字从右表（table2）返回所有的行，即使左表（table1）中没有匹配。如果左表中没有匹配，则结果为 NULL。</p> <div class="language- extra-class"><pre class="language-text"><code>SELECT Websites.name, access_log.count, access_log.date 
-FROM access_log RIGHT JOIN Websites ON access_log.site_id=Websites.id 
-ORDER BY access_log.count DESC;
+FULL JOIN：只要其中一个表中存在匹配，则返回行</p> <div class="language-sql extra-class"><pre class="language-sql"><code><span class="token keyword">SELECT</span> Websites<span class="token punctuation">.</span>id<span class="token punctuation">,</span> Websites<span class="token punctuation">.</span>name<span class="token punctuation">,</span> access_log<span class="token punctuation">.</span>count<span class="token punctuation">,</span> access_log<span class="token punctuation">.</span><span class="token keyword">date</span>
+<span class="token keyword">FROM</span> Websites  <span class="token keyword">INNER</span> <span class="token keyword">JOIN</span> access_log
+<span class="token keyword">ON</span> Websites<span class="token punctuation">.</span>id<span class="token operator">=</span>access_log<span class="token punctuation">.</span>site_id<span class="token punctuation">;</span>
+</code></pre></div><p>LEFT JOIN 关键字从左表（table1）返回所有的行，即使右表（table2）中没有匹配。如果右表中没有匹配，则结果为 NULL。</p> <div class="language-sql extra-class"><pre class="language-sql"><code><span class="token keyword">SELECT</span> Websites<span class="token punctuation">.</span>name<span class="token punctuation">,</span> access_log<span class="token punctuation">.</span>count<span class="token punctuation">,</span> access_log<span class="token punctuation">.</span><span class="token keyword">date</span>
+<span class="token keyword">FROM</span> Websites <span class="token keyword">LEFT</span> <span class="token keyword">JOIN</span> access_log <span class="token keyword">ON</span> Websites<span class="token punctuation">.</span>id<span class="token operator">=</span>access_log<span class="token punctuation">.</span>site_id
+<span class="token keyword">ORDER</span> <span class="token keyword">BY</span> access_log<span class="token punctuation">.</span>count <span class="token keyword">DESC</span><span class="token punctuation">;</span>
+</code></pre></div><p>RIGHT JOIN 关键字从右表（table2）返回所有的行，即使左表（table1）中没有匹配。如果左表中没有匹配，则结果为 NULL。</p> <div class="language-sql extra-class"><pre class="language-sql"><code><span class="token keyword">SELECT</span> Websites<span class="token punctuation">.</span>name<span class="token punctuation">,</span> access_log<span class="token punctuation">.</span>count<span class="token punctuation">,</span> access_log<span class="token punctuation">.</span><span class="token keyword">date</span> 
+<span class="token keyword">FROM</span> access_log <span class="token keyword">RIGHT</span> <span class="token keyword">JOIN</span> Websites <span class="token keyword">ON</span> access_log<span class="token punctuation">.</span>site_id<span class="token operator">=</span>Websites<span class="token punctuation">.</span>id 
+<span class="token keyword">ORDER</span> <span class="token keyword">BY</span> access_log<span class="token punctuation">.</span>count <span class="token keyword">DESC</span><span class="token punctuation">;</span>
 </code></pre></div><p>默认地，UNION 操作符选取不同的值。如果允许重复的值，请使用 UNION ALL。<br>
-UNION 结果集中的列名总是等于 UNION 中第一个 SELECT 语句中的列名。</p> <div class="language- extra-class"><pre class="language-text"><code>SELECT country, name FROM Websites  WHERE country='CN'
-UNION ALL
-SELECT country, app_name FROM apps
-WHERE country='CN'
-ORDER BY country;
-</code></pre></div><div class="language- extra-class"><pre class="language-text"><code>CREATE DATABASE my_db;
-CREATE TABLE Persons
-(PersonID int,LastName varchar(255),FirstName varchar(255));
-CREATE TABLE Persons
-( P_Id int NOT NULL, LastName varchar(255) NOT NULL, FirstName varchar(255),
-Address varchar(255), City varchar(255)   )
-</code></pre></div><p>每个表可以有多个 UNIQUE 约束，但是每个表只能有一个 PRIMARY KEY 约束。</p> <div class="language- extra-class"><pre class="language-text"><code>DROP TABLE IF EXISTS `apps`;
-CREATE TABLE `apps` (   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `app_name` char(20) NOT NULL DEFAULT '' COMMENT '站点名称',
-  `url` varchar(255) NOT NULL DEFAULT '',
-  `country` char(10) NOT NULL DEFAULT '' COMMENT '国家',
-  PRIMARY KEY (`id`)  )
-MySQL：CREATE TABLE Orders
-(O_Id int NOT NULL, OrderNo int NOT NULL, P_Id int,
-PRIMARY KEY (O_Id), FOREIGN KEY (P_Id) REFERENCES Persons(P_Id) )
-Oracle：CREATE TABLE Orders
-(O_Id int NOT NULL PRIMARY KEY, OrderNo int NOT NULL,
-P_Id int FOREIGN KEY REFERENCES Persons(P_Id))
-MySQL：CREATE TABLE Persons
-( P_Id int NOT NULL, LastName varchar(255) NOT NULL, FirstName varchar(255),
-Address varchar(255), City varchar(255), CHECK (P_Id&gt;0) )
-Oracle：CREATE TABLE Persons
-( P_Id int NOT NULL CHECK (P_Id&gt;0), LastName varchar(255) NOT NULL,
-FirstName varchar(255), Address varchar(255), City varchar(255) )
+UNION 结果集中的列名总是等于 UNION 中第一个 SELECT 语句中的列名。</p> <div class="language-sql extra-class"><pre class="language-sql"><code><span class="token keyword">SELECT</span> country<span class="token punctuation">,</span> name <span class="token keyword">FROM</span> Websites  <span class="token keyword">WHERE</span> country<span class="token operator">=</span><span class="token string">'CN'</span>
+<span class="token keyword">UNION</span> <span class="token keyword">ALL</span>
+<span class="token keyword">SELECT</span> country<span class="token punctuation">,</span> app_name <span class="token keyword">FROM</span> apps
+<span class="token keyword">WHERE</span> country<span class="token operator">=</span><span class="token string">'CN'</span>
+<span class="token keyword">ORDER</span> <span class="token keyword">BY</span> country<span class="token punctuation">;</span>
+</code></pre></div><div class="language-sql extra-class"><pre class="language-sql"><code><span class="token keyword">CREATE</span> <span class="token keyword">DATABASE</span> my_db<span class="token punctuation">;</span>
+<span class="token keyword">CREATE</span> <span class="token keyword">TABLE</span> Persons
+<span class="token punctuation">(</span>PersonID <span class="token keyword">int</span><span class="token punctuation">,</span>LastName <span class="token keyword">varchar</span><span class="token punctuation">(</span><span class="token number">255</span><span class="token punctuation">)</span><span class="token punctuation">,</span>FirstName <span class="token keyword">varchar</span><span class="token punctuation">(</span><span class="token number">255</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">CREATE</span> <span class="token keyword">TABLE</span> Persons
+<span class="token punctuation">(</span> P_Id <span class="token keyword">int</span> <span class="token operator">NOT</span> <span class="token boolean">NULL</span><span class="token punctuation">,</span> LastName <span class="token keyword">varchar</span><span class="token punctuation">(</span><span class="token number">255</span><span class="token punctuation">)</span> <span class="token operator">NOT</span> <span class="token boolean">NULL</span><span class="token punctuation">,</span> FirstName <span class="token keyword">varchar</span><span class="token punctuation">(</span><span class="token number">255</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+Address <span class="token keyword">varchar</span><span class="token punctuation">(</span><span class="token number">255</span><span class="token punctuation">)</span><span class="token punctuation">,</span> City <span class="token keyword">varchar</span><span class="token punctuation">(</span><span class="token number">255</span><span class="token punctuation">)</span>   <span class="token punctuation">)</span>
+</code></pre></div><p>每个表可以有多个 UNIQUE 约束，但是每个表只能有一个 PRIMARY KEY 约束。</p> <div class="language-sql extra-class"><pre class="language-sql"><code><span class="token keyword">DROP</span> <span class="token keyword">TABLE</span> <span class="token keyword">IF</span> <span class="token keyword">EXISTS</span> <span class="token punctuation">`</span>apps<span class="token punctuation">`</span><span class="token punctuation">;</span>
+<span class="token keyword">CREATE</span> <span class="token keyword">TABLE</span> <span class="token punctuation">`</span>apps<span class="token punctuation">`</span> <span class="token punctuation">(</span>   <span class="token punctuation">`</span>id<span class="token punctuation">`</span> <span class="token keyword">int</span><span class="token punctuation">(</span><span class="token number">11</span><span class="token punctuation">)</span> <span class="token operator">NOT</span> <span class="token boolean">NULL</span> <span class="token keyword">AUTO_INCREMENT</span><span class="token punctuation">,</span>
+  <span class="token punctuation">`</span>app_name<span class="token punctuation">`</span> <span class="token keyword">char</span><span class="token punctuation">(</span><span class="token number">20</span><span class="token punctuation">)</span> <span class="token operator">NOT</span> <span class="token boolean">NULL</span> <span class="token keyword">DEFAULT</span> <span class="token string">''</span> <span class="token keyword">COMMENT</span> <span class="token string">'站点名称'</span><span class="token punctuation">,</span>
+  <span class="token punctuation">`</span>url<span class="token punctuation">`</span> <span class="token keyword">varchar</span><span class="token punctuation">(</span><span class="token number">255</span><span class="token punctuation">)</span> <span class="token operator">NOT</span> <span class="token boolean">NULL</span> <span class="token keyword">DEFAULT</span> <span class="token string">''</span><span class="token punctuation">,</span>
+  <span class="token punctuation">`</span>country<span class="token punctuation">`</span> <span class="token keyword">char</span><span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">)</span> <span class="token operator">NOT</span> <span class="token boolean">NULL</span> <span class="token keyword">DEFAULT</span> <span class="token string">''</span> <span class="token keyword">COMMENT</span> <span class="token string">'国家'</span><span class="token punctuation">,</span>
+  <span class="token keyword">PRIMARY</span> <span class="token keyword">KEY</span> <span class="token punctuation">(</span><span class="token punctuation">`</span>id<span class="token punctuation">`</span><span class="token punctuation">)</span>  <span class="token punctuation">)</span>
+MySQL：<span class="token keyword">CREATE</span> <span class="token keyword">TABLE</span> Orders
+<span class="token punctuation">(</span>O_Id <span class="token keyword">int</span> <span class="token operator">NOT</span> <span class="token boolean">NULL</span><span class="token punctuation">,</span> OrderNo <span class="token keyword">int</span> <span class="token operator">NOT</span> <span class="token boolean">NULL</span><span class="token punctuation">,</span> P_Id <span class="token keyword">int</span><span class="token punctuation">,</span>
+<span class="token keyword">PRIMARY</span> <span class="token keyword">KEY</span> <span class="token punctuation">(</span>O_Id<span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token keyword">FOREIGN</span> <span class="token keyword">KEY</span> <span class="token punctuation">(</span>P_Id<span class="token punctuation">)</span> <span class="token keyword">REFERENCES</span> Persons<span class="token punctuation">(</span>P_Id<span class="token punctuation">)</span> <span class="token punctuation">)</span>
+Oracle：<span class="token keyword">CREATE</span> <span class="token keyword">TABLE</span> Orders
+<span class="token punctuation">(</span>O_Id <span class="token keyword">int</span> <span class="token operator">NOT</span> <span class="token boolean">NULL</span> <span class="token keyword">PRIMARY</span> <span class="token keyword">KEY</span><span class="token punctuation">,</span> OrderNo <span class="token keyword">int</span> <span class="token operator">NOT</span> <span class="token boolean">NULL</span><span class="token punctuation">,</span>
+P_Id <span class="token keyword">int</span> <span class="token keyword">FOREIGN</span> <span class="token keyword">KEY</span> <span class="token keyword">REFERENCES</span> Persons<span class="token punctuation">(</span>P_Id<span class="token punctuation">)</span><span class="token punctuation">)</span>
+MySQL：<span class="token keyword">CREATE</span> <span class="token keyword">TABLE</span> Persons
+<span class="token punctuation">(</span> P_Id <span class="token keyword">int</span> <span class="token operator">NOT</span> <span class="token boolean">NULL</span><span class="token punctuation">,</span> LastName <span class="token keyword">varchar</span><span class="token punctuation">(</span><span class="token number">255</span><span class="token punctuation">)</span> <span class="token operator">NOT</span> <span class="token boolean">NULL</span><span class="token punctuation">,</span> FirstName <span class="token keyword">varchar</span><span class="token punctuation">(</span><span class="token number">255</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+Address <span class="token keyword">varchar</span><span class="token punctuation">(</span><span class="token number">255</span><span class="token punctuation">)</span><span class="token punctuation">,</span> City <span class="token keyword">varchar</span><span class="token punctuation">(</span><span class="token number">255</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token keyword">CHECK</span> <span class="token punctuation">(</span>P_Id<span class="token operator">&gt;</span><span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">)</span>
+Oracle：<span class="token keyword">CREATE</span> <span class="token keyword">TABLE</span> Persons
+<span class="token punctuation">(</span> P_Id <span class="token keyword">int</span> <span class="token operator">NOT</span> <span class="token boolean">NULL</span> <span class="token keyword">CHECK</span> <span class="token punctuation">(</span>P_Id<span class="token operator">&gt;</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">,</span> LastName <span class="token keyword">varchar</span><span class="token punctuation">(</span><span class="token number">255</span><span class="token punctuation">)</span> <span class="token operator">NOT</span> <span class="token boolean">NULL</span><span class="token punctuation">,</span>
+FirstName <span class="token keyword">varchar</span><span class="token punctuation">(</span><span class="token number">255</span><span class="token punctuation">)</span><span class="token punctuation">,</span> Address <span class="token keyword">varchar</span><span class="token punctuation">(</span><span class="token number">255</span><span class="token punctuation">)</span><span class="token punctuation">,</span> City <span class="token keyword">varchar</span><span class="token punctuation">(</span><span class="token number">255</span><span class="token punctuation">)</span> <span class="token punctuation">)</span>
 </code></pre></div><p>DROP TABLE 语句用于删除表。  <code>DROP TABLE table_name</code><br>
 DROP DATABASE 语句用于删除数据库。 <code>DROP DATABASE database_name</code><br>
-改变表中列的数据类型：<code>ALTER TABLE table_name MODIFY column_name datatype;</code></p> <div class="language- extra-class"><pre class="language-text"><code>CREATE TABLE Persons
-( ID int NOT NULL AUTO_INCREMENT, LastName varchar(255) NOT NULL,
-FirstName varchar(255), Address varchar(255), City varchar(255), PRIMARY KEY (ID))
-CREATE OR REPLACE VIEW view_name AS
-SELECT column_name(s)   FROM table_name   WHERE condition ;
-SELECT * FROM Orders WHERE OrderDate='2008-11-11' ;
-SELECT LastName,FirstName,Address FROM Persons  WHERE Address IS NULL;
-SELECT LastName,FirstName,Address FROM Persons WHERE Address IS NOT NULL;
-SELECT AVG(count) AS CountAverage FROM access_log;
-SELECT COUNT(count) AS nums FROM access_log  WHERE site_id=3;
-SELECT MAX(alexa) AS max_alexa FROM Websites;
-SELECT MIN(alexa) AS min_alexa FROM Websites;
-SELECT SUM(count) AS nums FROM access_log;
-</code></pre></div><div class="language- extra-class"><pre class="language-text"><code>SELECT site_id, SUM(access_log.count) AS nums
-FROM access_log GROUP BY site_id;
-</code></pre></div><div class="language- extra-class"><pre class="language-text"><code>SELECT Websites.name, SUM(access_log.count) AS nums FROM Websites
-INNER JOIN access_log
-ON Websites.id=access_log.site_id
-WHERE Websites.alexa &lt; 200
-GROUP BY Websites.name
-HAVING SUM(access_log.count) &gt; 200;
-</code></pre></div><div class="language- extra-class"><pre class="language-text"><code>SELECT name, LENGTH(url) as LengthOfURL   FROM Websites;
-SELECT name, url, Now() AS date  FROM Websites;
-SELECT name, url, DATE_FORMAT(Now(),'%Y-%m-%d') AS date   FROM Websites;
+改变表中列的数据类型：<code>ALTER TABLE table_name MODIFY column_name datatype;</code></p> <div class="language-sql extra-class"><pre class="language-sql"><code><span class="token keyword">CREATE</span> <span class="token keyword">TABLE</span> Persons
+<span class="token punctuation">(</span> ID <span class="token keyword">int</span> <span class="token operator">NOT</span> <span class="token boolean">NULL</span> <span class="token keyword">AUTO_INCREMENT</span><span class="token punctuation">,</span> LastName <span class="token keyword">varchar</span><span class="token punctuation">(</span><span class="token number">255</span><span class="token punctuation">)</span> <span class="token operator">NOT</span> <span class="token boolean">NULL</span><span class="token punctuation">,</span>
+FirstName <span class="token keyword">varchar</span><span class="token punctuation">(</span><span class="token number">255</span><span class="token punctuation">)</span><span class="token punctuation">,</span> Address <span class="token keyword">varchar</span><span class="token punctuation">(</span><span class="token number">255</span><span class="token punctuation">)</span><span class="token punctuation">,</span> City <span class="token keyword">varchar</span><span class="token punctuation">(</span><span class="token number">255</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token keyword">PRIMARY</span> <span class="token keyword">KEY</span> <span class="token punctuation">(</span>ID<span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token keyword">CREATE</span> <span class="token operator">OR</span> <span class="token keyword">REPLACE</span> <span class="token keyword">VIEW</span> view_name <span class="token keyword">AS</span>
+<span class="token keyword">SELECT</span> column_name<span class="token punctuation">(</span>s<span class="token punctuation">)</span>   <span class="token keyword">FROM</span> table_name   <span class="token keyword">WHERE</span> condition <span class="token punctuation">;</span>
+<span class="token keyword">SELECT</span> <span class="token operator">*</span> <span class="token keyword">FROM</span> Orders <span class="token keyword">WHERE</span> OrderDate<span class="token operator">=</span><span class="token string">'2008-11-11'</span> <span class="token punctuation">;</span>
+<span class="token keyword">SELECT</span> LastName<span class="token punctuation">,</span>FirstName<span class="token punctuation">,</span>Address <span class="token keyword">FROM</span> Persons  <span class="token keyword">WHERE</span> Address <span class="token operator">IS</span> <span class="token boolean">NULL</span><span class="token punctuation">;</span>
+<span class="token keyword">SELECT</span> LastName<span class="token punctuation">,</span>FirstName<span class="token punctuation">,</span>Address <span class="token keyword">FROM</span> Persons <span class="token keyword">WHERE</span> Address <span class="token operator">IS</span> <span class="token operator">NOT</span> <span class="token boolean">NULL</span><span class="token punctuation">;</span>
+<span class="token keyword">SELECT</span> <span class="token function">AVG</span><span class="token punctuation">(</span>count<span class="token punctuation">)</span> <span class="token keyword">AS</span> CountAverage <span class="token keyword">FROM</span> access_log<span class="token punctuation">;</span>
+<span class="token keyword">SELECT</span> <span class="token function">COUNT</span><span class="token punctuation">(</span>count<span class="token punctuation">)</span> <span class="token keyword">AS</span> nums <span class="token keyword">FROM</span> access_log  <span class="token keyword">WHERE</span> site_id<span class="token operator">=</span><span class="token number">3</span><span class="token punctuation">;</span>
+<span class="token keyword">SELECT</span> <span class="token function">MAX</span><span class="token punctuation">(</span>alexa<span class="token punctuation">)</span> <span class="token keyword">AS</span> max_alexa <span class="token keyword">FROM</span> Websites<span class="token punctuation">;</span>
+<span class="token keyword">SELECT</span> <span class="token function">MIN</span><span class="token punctuation">(</span>alexa<span class="token punctuation">)</span> <span class="token keyword">AS</span> min_alexa <span class="token keyword">FROM</span> Websites<span class="token punctuation">;</span>
+<span class="token keyword">SELECT</span> <span class="token function">SUM</span><span class="token punctuation">(</span>count<span class="token punctuation">)</span> <span class="token keyword">AS</span> nums <span class="token keyword">FROM</span> access_log<span class="token punctuation">;</span>
+</code></pre></div><div class="language-sql extra-class"><pre class="language-sql"><code><span class="token keyword">SELECT</span> site_id<span class="token punctuation">,</span> <span class="token function">SUM</span><span class="token punctuation">(</span>access_log<span class="token punctuation">.</span>count<span class="token punctuation">)</span> <span class="token keyword">AS</span> nums
+<span class="token keyword">FROM</span> access_log <span class="token keyword">GROUP</span> <span class="token keyword">BY</span> site_id<span class="token punctuation">;</span>
+</code></pre></div><div class="language-sql extra-class"><pre class="language-sql"><code><span class="token keyword">SELECT</span> Websites<span class="token punctuation">.</span>name<span class="token punctuation">,</span> <span class="token function">SUM</span><span class="token punctuation">(</span>access_log<span class="token punctuation">.</span>count<span class="token punctuation">)</span> <span class="token keyword">AS</span> nums <span class="token keyword">FROM</span> Websites
+<span class="token keyword">INNER</span> <span class="token keyword">JOIN</span> access_log
+<span class="token keyword">ON</span> Websites<span class="token punctuation">.</span>id<span class="token operator">=</span>access_log<span class="token punctuation">.</span>site_id
+<span class="token keyword">WHERE</span> Websites<span class="token punctuation">.</span>alexa <span class="token operator">&lt;</span> <span class="token number">200</span>
+<span class="token keyword">GROUP</span> <span class="token keyword">BY</span> Websites<span class="token punctuation">.</span>name
+<span class="token keyword">HAVING</span> <span class="token function">SUM</span><span class="token punctuation">(</span>access_log<span class="token punctuation">.</span>count<span class="token punctuation">)</span> <span class="token operator">&gt;</span> <span class="token number">200</span><span class="token punctuation">;</span>
+</code></pre></div><div class="language-sql extra-class"><pre class="language-sql"><code><span class="token keyword">SELECT</span> name<span class="token punctuation">,</span> LENGTH<span class="token punctuation">(</span>url<span class="token punctuation">)</span> <span class="token keyword">as</span> LengthOfURL   <span class="token keyword">FROM</span> Websites<span class="token punctuation">;</span>
+<span class="token keyword">SELECT</span> name<span class="token punctuation">,</span> url<span class="token punctuation">,</span> <span class="token function">Now</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">AS</span> <span class="token keyword">date</span>  <span class="token keyword">FROM</span> Websites<span class="token punctuation">;</span>
+<span class="token keyword">SELECT</span> name<span class="token punctuation">,</span> url<span class="token punctuation">,</span> DATE_FORMAT<span class="token punctuation">(</span><span class="token function">Now</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span><span class="token string">'%Y-%m-%d'</span><span class="token punctuation">)</span> <span class="token keyword">AS</span> <span class="token keyword">date</span>   <span class="token keyword">FROM</span> Websites<span class="token punctuation">;</span>
 </code></pre></div></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated: </span> <span class="time">6/18/2019, 2:04:42 PM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
         ←
         <a href="/后端/node.html" class="prev">
           node
         </a></span> <!----></p></div> </main></div><div class="global-ui"></div></div>
-    <script src="/assets/js/app.56d36088.js" defer></script><script src="/assets/js/2.b0aa7967.js" defer></script><script src="/assets/js/6.8aa7f68e.js" defer></script>
+    <script src="/assets/js/app.053b916f.js" defer></script><script src="/assets/js/2.b0aa7967.js" defer></script><script src="/assets/js/6.c6611473.js" defer></script>
   </body>
 </html>
