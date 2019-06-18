@@ -9,6 +9,14 @@ module.exports = {
 				link: '/'
 			},
 			{
+				text: '前端',
+				link: '/前端/markdown语法'
+			},
+			{
+				text: '后端',
+				link: '/后端/node'
+			},
+			{
 				text: 'GitHub',
 				link: 'https://github.com/chendreamer'
 			},
@@ -17,14 +25,17 @@ module.exports = {
 				link: 'https://baidu.com'
 			}
 		],
-		sidebar: [{
-				title: '前端',
-				children: ['/前端/markdown语法','/前端/ES6','/前端/git使用手册','/前端/vue']
-			},
-			{
-				title: '后端',
-				children: ['/后端/b', '/后端/web']
-			}
-		]
+		sidebar: {
+			'/前端/': [
+				'markdown语法',
+				'ES6',
+				'git使用手册',
+				'vue'
+			],
+			'/后端/': [
+				'node',
+				'sql语句'
+			]
+		}
 	}
 }
