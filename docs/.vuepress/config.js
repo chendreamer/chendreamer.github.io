@@ -30,8 +30,10 @@ module.exports = {
 				'markdown语法',
 				'ES6',
 				'git使用手册',
+				'JS函数大全',
 				'vue',
-				'Mockjs'
+				'Mockjs',
+				'WEB安全'
 			],
 			'/后端/': [
 				'node',
