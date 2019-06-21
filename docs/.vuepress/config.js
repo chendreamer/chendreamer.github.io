@@ -10,11 +10,11 @@ module.exports = {
 			},
 			{
 				text: '前端',
-				link: '/前端/markdown语法'
+				link: '/前端/首页'
 			},
 			{
 				text: '后端',
-				link: '/后端/node'
+				link: '/后端/首页'
 			},
 			{
 				text: 'GitHub',
@@ -27,6 +27,7 @@ module.exports = {
 		],
 		sidebar: {
 			'/前端/': [
+				'首页',
 				'markdown语法',
 				'ES6',
 				'git使用手册',
@@ -36,6 +37,7 @@ module.exports = {
 				'WEB安全'
 			],
 			'/后端/': [
+				'首页',
 				'node',
 				'sql语句'
 			]
