@@ -28,6 +28,7 @@ module.exports = {
 		sidebar: {
 			'/前端/': [
 				'首页',
+				'小知识点',
 				'markdown语法',
 				'ES6',
 				'git使用手册',
@@ -38,6 +39,7 @@ module.exports = {
 			],
 			'/后端/': [
 				'首页',
+				'小知识点',
 				'node',
 				'sql语句'
 			]
