@@ -41,7 +41,8 @@ module.exports = {
 				'首页',
 				'小知识点',
 				'node',
-				'sql语句'
+				'sql语句',
+				'mongoDB'
 			]
 		}
 	}
