@@ -2,6 +2,6 @@
 <br/><br/><br/><br/>
 ![kuangjia](./image/kuangjia.jpg)  
 <br/>
-**<h3><center>前端三巨头</center></h3>**
+**<h3><center>react&angular&vue</center></h3>**
 
 
