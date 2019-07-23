@@ -1,4 +1,5 @@
 # ES6
+<a href="http://es6.ruanyifeng.com/#docs/intro" target="_blank">ES6入门教程</a>  
 ## let, const  
 let则实际上为js新增了块级作用域。用它所声明的变量，只在let命令所在的代码块内有效。
 ```js

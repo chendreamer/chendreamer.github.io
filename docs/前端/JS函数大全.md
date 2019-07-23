@@ -1,4 +1,5 @@
 # JS函数大全
+<a href="http://jquery.cuishifeng.cn/" target="_blank">jquery api</a>  
 ```js
 array创建数组
 concat()连接两个或更多的数组，并返回结果。
