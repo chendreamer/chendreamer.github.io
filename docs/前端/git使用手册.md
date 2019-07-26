@@ -9,6 +9,7 @@
 + 创建远程分支并切换到远程分支上`git branch -b 分支名`
 + 删除分支`git branch -d 分支名`
 + 删除远程分支`git push origin :分支名`
++ 清除远程不存在的分支`git fetch --prune`
 + 切换分支`git checkout 分支名`
 + 合并分支,把某个分支合并到master主分支上`git merge 分支名`
 + 克隆远程仓库`git clone 远程仓库的地址`
