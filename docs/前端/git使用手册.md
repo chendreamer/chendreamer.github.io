@@ -19,3 +19,4 @@
 + git pull之后查看代码跟新内容 `git diff HEAD^`
 + 显示工作目录与git仓库之间的差异`git diff HEAD`
 + 更新本地的远程分支目录`git remote update origin --prune`
++ 拉取新远程分支到本地`git checkout -b 本地分支 origin/远程分支`

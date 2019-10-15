@@ -31,11 +31,13 @@ module.exports = {
 				'知识点',
 				'markdown语法',
 				'ES6',
+                'flex&grid',
 				'git使用手册',
 				'JS函数大全',
 				'vue',
 				'Mockjs',
-				'WEB安全'
+				'WEB安全',
+                'webpack'
 			],
 			'/后端/': [
 				'首页',
