@@ -125,3 +125,35 @@ let says = say()
 console.log(`The ${type} says ${says} to ${animal}`)  
 //The dog says Hello to A cat
 ```
+## promise
+```js
+var myFirstPromise = new Promise(function(resolve, reject) {
+    //当异步代码执行成功时，我们才会调用resolve(...), 当异步代码失败时就会调用reject(...)
+    //在本例中，我们使用setTimeout(...)来模拟异步代码，实际编码时可能是XHR请求或是HTML5的一些API方法.
+    var a = Math.random();
+    setTimeout(function() {
+        console.log(a);
+        if (a > 0.5) {
+            resolve("成功!"); //代码正常执行！
+        } else if (a > 0.25) {
+            reject("因为我大于0.25小于0.5");//异常
+        } else {
+            reject("因为我小于0.25"); //异常
+        }
+    }, 1000);
+});
+//捕捉结果
+myFirstPromise.then(function(successMessage) {
+    //successMessage的值是上面调用resolve(...)方法传入的值.
+    //successMessage参数不一定非要是字符串类型，这里只是举个例子
+    console.log("Yay! " + successMessage);
+}, function(failMessage) {
+    //failMessage的值是上面调用reject(...)方法传入的值.
+    //failMessage参数不一定非要是字符串类型，这里只是举个例子
+    console.log("oh no! 失败了");
+});
+// 记录失败原因
+myFirstPromise.catch(function(reason) {
+    console.log(reason);
+})
+```

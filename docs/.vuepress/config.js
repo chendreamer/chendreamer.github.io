@@ -37,7 +37,8 @@ module.exports = {
 				'vue',
 				'Mockjs',
 				'WEB安全',
-                'webpack'
+                'webpack',
+                'typescript'
 			],
 			'/后端/': [
 				'首页',
