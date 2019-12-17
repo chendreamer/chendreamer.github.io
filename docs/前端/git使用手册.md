@@ -1,7 +1,8 @@
 # git使用手册
 ![git](./image/git.png "git")
 + 查看状态`git status`
-+ 提交前`git add . 或者 git add a.txt 或者 git rm a.txt`
++ 提交到stage`git add . 或者 git add a.txt 或者 git rm a.txt`
++ 从stage撤回`git reset HEAD 或者 git reset a.txt`
 + 提交的备注信息`git commit -m '这里是备注信息'`
 + 提交`git push -u origin master`
 + 拉取远程代码`git pull origin master`
