@@ -33,6 +33,7 @@ module.exports = {
 				'ES6',
                 'flex&grid',
 				'git使用手册',
+                'js思维导图',
 				'JS函数大全',
 				'vue',
 				'Mockjs',
