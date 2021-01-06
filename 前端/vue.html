@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Vue | chen&#39;s blog</title>
     <meta name="description" content="个人博客">
+    <link rel="icon" href="image/logo.png">
     
-    
-    <link rel="preload" href="/assets/css/0.styles.12c0e3d8.css" as="style"><link rel="preload" href="/assets/js/app.c7f51e8b.js" as="script"><link rel="preload" href="/assets/js/2.69c67e6b.js" as="script"><link rel="preload" href="/assets/js/16.9ec29860.js" as="script"><link rel="prefetch" href="/assets/js/10.c1654fc5.js"><link rel="prefetch" href="/assets/js/11.ab5ae669.js"><link rel="prefetch" href="/assets/js/12.59865331.js"><link rel="prefetch" href="/assets/js/13.ba6abd71.js"><link rel="prefetch" href="/assets/js/14.7bb1f1ee.js"><link rel="prefetch" href="/assets/js/15.0229d79a.js"><link rel="prefetch" href="/assets/js/17.2953d67c.js"><link rel="prefetch" href="/assets/js/18.e5d6c2fa.js"><link rel="prefetch" href="/assets/js/19.c65c3867.js"><link rel="prefetch" href="/assets/js/20.3f6f0a0f.js"><link rel="prefetch" href="/assets/js/21.7d5a5da9.js"><link rel="prefetch" href="/assets/js/22.93bb18dc.js"><link rel="prefetch" href="/assets/js/23.3fb46595.js"><link rel="prefetch" href="/assets/js/24.3343baf2.js"><link rel="prefetch" href="/assets/js/3.050e77c9.js"><link rel="prefetch" href="/assets/js/4.d23d17c1.js"><link rel="prefetch" href="/assets/js/5.b6404722.js"><link rel="prefetch" href="/assets/js/6.ea9d9ed1.js"><link rel="prefetch" href="/assets/js/7.dd002c27.js"><link rel="prefetch" href="/assets/js/8.9ecfd688.js"><link rel="prefetch" href="/assets/js/9.ea9f7e2b.js">
+    <link rel="preload" href="/assets/css/0.styles.12c0e3d8.css" as="style"><link rel="preload" href="/assets/js/app.4c76c514.js" as="script"><link rel="preload" href="/assets/js/2.69c67e6b.js" as="script"><link rel="preload" href="/assets/js/16.9ec29860.js" as="script"><link rel="prefetch" href="/assets/js/10.c1654fc5.js"><link rel="prefetch" href="/assets/js/11.ab5ae669.js"><link rel="prefetch" href="/assets/js/12.59865331.js"><link rel="prefetch" href="/assets/js/13.ba6abd71.js"><link rel="prefetch" href="/assets/js/14.7bb1f1ee.js"><link rel="prefetch" href="/assets/js/15.0229d79a.js"><link rel="prefetch" href="/assets/js/17.2953d67c.js"><link rel="prefetch" href="/assets/js/18.e5d6c2fa.js"><link rel="prefetch" href="/assets/js/19.7669fba7.js"><link rel="prefetch" href="/assets/js/20.074a6994.js"><link rel="prefetch" href="/assets/js/21.a61ad778.js"><link rel="prefetch" href="/assets/js/22.fda512fb.js"><link rel="prefetch" href="/assets/js/23.691b1232.js"><link rel="prefetch" href="/assets/js/24.3343baf2.js"><link rel="prefetch" href="/assets/js/3.050e77c9.js"><link rel="prefetch" href="/assets/js/4.d23d17c1.js"><link rel="prefetch" href="/assets/js/5.b6404722.js"><link rel="prefetch" href="/assets/js/6.ea9d9ed1.js"><link rel="prefetch" href="/assets/js/7.dd002c27.js"><link rel="prefetch" href="/assets/js/8.7c1908e0.js"><link rel="prefetch" href="/assets/js/9.ea9f7e2b.js">
     <link rel="stylesheet" href="/assets/css/0.styles.12c0e3d8.css">
   </head>
   <body>
@@ -31,7 +31,7 @@ yarn add sass
 +Getter：可以认为是 store 的计算属性。就像计算属性一样，getter 的返回值会根据它的依赖被缓存起来，且只有当它的依赖值发生了改变才会被重新计算。getter 在通过方法访问时，每次都会去进行调用，而不会缓存结果。
 +Mutation:更改 Vuex 的 store 中的状态的唯一方法是提交 mutation。 mutation 必须是同步函数。
 +Action:Action 类似于 mutation，不同在于：Action 提交的是 mutation，而不是直接变更状态。Action 可以包含任意异步操作。
-+Module:每个模块拥有自己的 state、mutation、action、getter、甚至是嵌套子模块。</p> <h2 id="vue优化速度"><a href="#vue优化速度" aria-hidden="true" class="header-anchor">#</a> vue优化速度</h2> <ul><li>开启gzip。1.代码中加入配置命令，2.服务器允许访问.gz文件。</li> <li>按需加载</li></ul></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated: </span> <span class="time">12/17/2019, 6:15:56 PM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
++Module:每个模块拥有自己的 state、mutation、action、getter、甚至是嵌套子模块。</p> <h2 id="vue优化速度"><a href="#vue优化速度" aria-hidden="true" class="header-anchor">#</a> vue优化速度</h2> <ul><li>开启gzip。1.代码中加入配置命令，2.服务器允许访问.gz文件。</li> <li>按需加载</li></ul></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated: </span> <span class="time">5/12/2020, 6:17:55 PM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
         ←
         <a href="/前端/JS函数大全.html" class="prev">
           JS函数大全
@@ -40,6 +40,6 @@ yarn add sass
         </a>
         →
       </span></p></div> </main></div><div class="global-ui"></div></div>
-    <script src="/assets/js/app.c7f51e8b.js" defer></script><script src="/assets/js/2.69c67e6b.js" defer></script><script src="/assets/js/16.9ec29860.js" defer></script>
+    <script src="/assets/js/app.4c76c514.js" defer></script><script src="/assets/js/2.69c67e6b.js" defer></script><script src="/assets/js/16.9ec29860.js" defer></script>
   </body>
 </html>
